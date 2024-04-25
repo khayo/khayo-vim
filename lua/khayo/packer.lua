@@ -57,4 +57,5 @@ return require('packer').startup(function(use)
         requires = 'nvim-tree/nvim-web-devicons'
     }
     use { 'm4xshen/autoclose.nvim' }
+    use { "akinsho/toggleterm.nvim" }
 end)

@@ -10,6 +10,7 @@ vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv")
 -- coloca o cursor no meio da tela quando navego usando ctrl+d e ctrl+u
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
 -- colaca o cursor no meio da tela quando faço uma busca
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
