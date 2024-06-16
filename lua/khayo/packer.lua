@@ -58,4 +58,5 @@ return require('packer').startup(function(use)
     }
     use { 'm4xshen/autoclose.nvim' }
     use { "akinsho/toggleterm.nvim" }
+    use { "windwp/nvim-ts-autotag"}
 end)
