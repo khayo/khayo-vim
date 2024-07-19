@@ -44,3 +44,11 @@ vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- navegação entre buffers (tabs)
+vim.keymap.set("n", "<leader>bb", "<cmd>bprevious<CR>")
+vim.keymap.set("n", "<leader>bn", "<cmd>bnext<CR>")
+vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<CR>")
+
+-- abre o file explorer
+vim.keymap.set('n', '<leader>e' ,"<cmd>NvimTreeToggle<CR>")

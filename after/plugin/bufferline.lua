@@ -13,8 +13,3 @@ require("bufferline").setup{
     }
 }
 
-vim.keymap.set("n", "<leader>bb", "<cmd>bprevious<CR>")
-vim.keymap.set("n", "<leader>bn", "<cmd>bnext<CR>")
-vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<CR>")
-
-
