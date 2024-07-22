@@ -57,7 +57,10 @@ return require('packer').startup(function(use)
         requires = 'nvim-tree/nvim-web-devicons'
     }
     -- use { 'm4xshen/autoclose.nvim' }
+    -- terminal integrado
     use { "akinsho/toggleterm.nvim" }
+
+    -- fecha automaticamente as tags
     use { "windwp/nvim-ts-autotag"}
     use {
         "windwp/nvim-autopairs",
@@ -65,5 +68,15 @@ return require('packer').startup(function(use)
         config = function()
             require("nvim-autopairs").setup {}
         end
+    }
+    -- icon picker
+    use "stevearc/dressing.nvim"
+    use {
+      "ziontee113/icon-picker.nvim",
+      config = function()
+        require("icon-picker").setup({
+          disable_legacy_commands = true
+        })
+      end
     }
 end)
