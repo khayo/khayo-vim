@@ -1,13 +1,9 @@
 # khayo-vim
 Repositório para armazenar minhas configurações do neovim
 
-Antes de configurar o nvim é necessário instalar o Packer:
+Está versão utiliza o lazy como gerenciador de pacotes
 
-https://github.com/wbthomason/packer.nvim
-
-## Linux
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-
-## Windows
-git clone --depth 1 https://github.com/wbthomason/packer.nvim /c/Users/khayo/AppData/Local/nvim-data/site/pack/packer/start/packer.nvim
+Para resolver o problema do tresitter no checkhealth
+```bash
+npm i -g tree-sitter-cli
+```
