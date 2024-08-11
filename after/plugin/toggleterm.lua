@@ -15,7 +15,13 @@ toggleterm.setup({
     persist_size = true,
     direction = "horizontal",
     close_on_exit = true,
-    shell = vim.o.shell
+    shell = vim.o.shell,
+    winbar = {
+        enabled = false,
+        name_formatter = function(term) --  term: Terminal
+          return term.name
+        end
+    },
 })
 
 
