@@ -99,4 +99,18 @@ return {
         },
       },
     },
+    {
+        -- para funcionar precisa instalar o netcoredbg
+        -- https://github.com/Samsung/netcoredbg
+        -- colocar os arquivos em /usr/local/bin/netcoredbg
+        -- rodar chmod 744 * na pasta do netcoredbg
+        "mfussenegger/nvim-dap"
+    },
+    {
+        "rcarriga/nvim-dap-ui",
+        dependencies = {
+            "mfussenegger/nvim-dap",
+            "nvim-neotest/nvim-nio"
+        },
+    }
 }
