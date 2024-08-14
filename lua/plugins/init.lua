@@ -27,10 +27,10 @@ return {
         end
     },
     {
-        'nvim-telescope/telescope.nvim', 
-        dependencies = { 'nvim-lua/plenary.nvim' } 
+        'nvim-telescope/telescope.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'nvim-treesitter/nvim-treesitter', 
+    { 'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate'
     },
     { 'nvim-treesitter/playground' },

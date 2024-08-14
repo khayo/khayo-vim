@@ -18,9 +18,9 @@ dap.configurations.cs = {
         local current_dir = vim.fn.getcwd()
         local folder_name = vim.fn.fnamemodify(current_dir, ':t')  -- Obtém o nome da pasta atual
         -- montei o endereço de debug assim, mas pode variar
-        local default_path = current_dir .. '/' .. folder_name .. '/bin/Debug/net8.0/' .. folder_name .. '.dll'
+        local default_path = current_dir .. '/bin/Debug/net8.0/' .. folder_name .. '.dll'
 
-        return vim.fn.input('Path to dll', default_path, 'file')
+        return vim.fn.input('Path to dll: ', default_path, 'file')
     end,
   },
 }
