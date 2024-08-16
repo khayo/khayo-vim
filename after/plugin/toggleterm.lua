@@ -19,14 +19,14 @@ toggleterm.setup({
     winbar = {
         enabled = false,
         name_formatter = function(term) --  term: Terminal
-          return term.name
+            return term.name
         end
     },
 })
 
 
 function _G.set_terminal_keymaps()
-    local opts = {noremap = true}
+    local opts = { noremap = true }
     vim.api.nvim_buf_set_keymap(0, 't', '<esc>', [[<C-\><C-n>]], opts)
 end
 

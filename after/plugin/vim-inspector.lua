@@ -17,4 +17,3 @@ vim.api.nvim_set_keymap('n', '<Leader>B', '<cmd>VimspectorBreakpoints<cr>', { no
 vim.api.nvim_set_keymap('n', '<Leader>D', '<cmd>VimspectorDisassemble<cr>', { noremap = false, silent = true })
 
 vim.api.nvim_set_keymap('n', '<Leader><F3>', '<cmd>VimspectorReset<cr>', { noremap = false, silent = true })
-
