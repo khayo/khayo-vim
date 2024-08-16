@@ -79,5 +79,12 @@ return {
     },
     {
         "Hoffs/omnisharp-extended-lsp.nvim"
+    },
+    {
+        "puremourning/vimspector",
+        init = function()
+          -- Defina a variável global antes do plugin ser carregado
+          vim.g.vimspector_enable_mappings = 'HUMAN'
+        end,
     }
 }
