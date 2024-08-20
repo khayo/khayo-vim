@@ -30,17 +30,17 @@ return {
         'nvim-telescope/telescope.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 
+    {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate'
     },
-    { 
-        'nvim-treesitter/playground' 
+    {
+        'nvim-treesitter/playground'
     },
-    { 
+    {
         'theprimeagen/harpoon'
     },
-    { 
+    {
         'mbbill/undotree'
     },
     {
@@ -59,14 +59,14 @@ return {
         version = 'v2.*',
         build = 'make install_jsregexp'
     },
-    { 
+    {
         'wakatime/vim-wakatime'
     },
-    { 
+    {
         'numToStr/Comment.nvim'
     },
-    { 
-        'windwp/nvim-ts-autotag' 
+    {
+        'windwp/nvim-ts-autotag'
     },
     {
         "kdheepak/lazygit.nvim",
@@ -75,13 +75,13 @@ return {
             "nvim-lua/plenary.nvim",
         },
     },
-    { 
+    {
         'akinsho/bufferline.nvim',
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
     -- terminal integrado
-    { 
-        'akinsho/toggleterm.nvim' 
+    {
+        'akinsho/toggleterm.nvim'
     },
 
     -- fecha automaticamente as tags
