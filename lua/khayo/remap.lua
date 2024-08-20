@@ -48,6 +48,8 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>bb", "<cmd>bprevious<CR>")
 vim.keymap.set("n", "<leader>bn", "<cmd>bnext<CR>")
 vim.keymap.set("n", "<leader>bd", "<cmd>bdelete<CR>")
+-- close all buffers
+vim.keymap.set("n", "<leader>ba", "<cmd>%bd|e#|bd#<CR>")
 
 -- abre o file explorer
 vim.keymap.set('n', '<leader>e' ,"<cmd>NvimTreeToggle<CR>")
