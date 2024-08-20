@@ -12,6 +12,19 @@ vim.keymap.set({'n', 'x'}, '<F13>', '<cmd>lua vim.lsp.buf.format({async = true})
 vim.keymap.set('n', '<F14>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
 
+-- Mensagem dentro do caixa flutuante
+vim.diagnostic.config({
+  virtual_text = true,
+  severity_sort = true,
+  float = {
+    style = 'minimal',
+    border = 'rounded',
+    source = 'always',
+    header = '',
+    prefix = '',
+  },
+})
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = {},
@@ -65,15 +78,3 @@ cmp.setup({
     })
 })
 
-
-vim.diagnostic.config({
-  virtual_text = true,
-  severity_sort = true,
-  float = {
-    style = 'minimal',
-    border = 'rounded',
-    source = 'always',
-    header = '',
-    prefix = '',
-  },
-})
