@@ -115,7 +115,12 @@ return {
     {
         -- serve para trabalhar em conjunto com o tmux (precisa instalar o plugin no tmux também)
         'christoomey/vim-tmux-navigator'
-        'joeveiga/ng.nvim'
+    },
     {
+        'joeveiga/ng.nvim'
+    },
+    {
+        'rafamadriz/friendly-snippets'
     }
+
 }
