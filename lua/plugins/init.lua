@@ -121,6 +121,9 @@ return {
     },
     {
         'rafamadriz/friendly-snippets'
+    },
+    {
+        'f-person/git-blame.nvim'   
     }
 
 }
