@@ -42,3 +42,10 @@ Ainda não consegui resolver as questões do clipboard que não funciona correta
 em máquinas remotas e WSL
 
 Também preciso aprender a usar o tmux de forma a útilizar todo seu potencial
+
+# Erro windows 
+`requires vim compiled with python`
+
+```bash
+ pip3 install pynvim
+```
