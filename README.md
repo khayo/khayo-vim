@@ -1,41 +1,63 @@
 # khayo-vim
 Repositório para armazenar minhas configurações do neovim
 
-Está versão utiliza o lazy como gerenciador de pacotes
-
-Para resolver o problema do tresitter no checkhealth
-```bash
-npm i -g tree-sitter-cli
-```
 
 # Comandos úteis:
 
 ## Instalação Lua
+```bash
 asdf plugin add lua
 asdf install lua 5.1
 asdf global lua 5.1
-
-ou
-
-asdf install lua latest
-asdf global lua latest
+```
 
 ## Instalação node
-
+```bash
 asdf plugin add nodejs
 asdf install nodejs 20.14.0
 asdf global nodejs 20.14.0
+```
 
 ## Pacotes node
+```bash
 npm i -g tree-sitter-cli
 npm i -g neovim
+```
 
 ## Pacotes APT
+```bash
 sudo apt install fd-find
 sudo apt install ripgrep
+```
 
-## Lazygit
-https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation
+# Lazygit
+## Windows
+### Chocolatey
+```powershell
+choco install lazygit
+```
+### Winget
+```
+winget install -e --id=JesseDuffield.lazygit
+```
+## Linux
+### ubuntu/termux
+```bash
+apt install lazygit
+```
+### Manjaro
+```bash
+sudo pacman -S lazygit
+```
+
+## Angular lsp
+```bash
+npm install -g typescript-language-server typescript                           
+npm install -g @angular/language-server                                        
+```
+
+# Dotnet
+## Instalação debugger
 
 # Falta resolver
 Ainda não consegui resolver as questões do clipboard que não funciona corretamente
