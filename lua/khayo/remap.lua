@@ -55,3 +55,5 @@ vim.keymap.set("n", "<leader>ba", "<cmd>%bd|e#|bd#<CR>")
 
 -- abre o file explorer
 vim.keymap.set('n', '<leader>e' ,"<cmd>NvimTreeToggle<CR>")
+vim.keymap.set('n', '<leader>vs' ,"<cmd>vs<CR>")
+vim.keymap.set('n', '<leader>vh' ,"<cmd>split<CR>")
