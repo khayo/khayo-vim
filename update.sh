@@ -10,6 +10,8 @@ linux_repo_dir="$HOME/.config/nvim"
 # Detecta o sistema operacional
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     repo_dir="$linux_repo_dir"
+elif [[ "$OSTYPE" == "linux-android"* ]]; then
+    repo_dir="$linux_repo_dir"
 elif [[ "$OSTYPE" == "msys" ]]; then
     repo_dir="$windows_repo_dir"
 else
