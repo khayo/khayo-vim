@@ -10,6 +10,10 @@ asdf plugin add lua
 asdf install lua 5.1
 asdf global lua 5.1
 ```
+### Em caso de erro na instalação
+```bash
+sudo apt-get install libreadline-dev
+```
 
 ## Instalação node
 ```bash
@@ -54,6 +58,11 @@ sudo pacman -S lazygit
 ```bash
 npm install -g typescript-language-server typescript                           
 npm install -g @angular/language-server                                        
+```
+
+## NGINX lsp
+```bash
+pip install -U nginx-language-server
 ```
 
 # Dotnet
