@@ -127,7 +127,12 @@ return {
         'rafamadriz/friendly-snippets'
     },
     {
-        'f-person/git-blame.nvim'   
+        'f-person/git-blame.nvim'
+    },
+    {
+        'mhartington/formatter.nvim'
+    },
+    {
+        'mfussenegger/nvim-lint'
     }
-
 }
