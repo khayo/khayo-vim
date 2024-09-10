@@ -129,10 +129,4 @@ return {
     {
         'f-person/git-blame.nvim'
     },
-    {
-        'mhartington/formatter.nvim'
-    },
-    {
-        'mfussenegger/nvim-lint'
-    }
 }
