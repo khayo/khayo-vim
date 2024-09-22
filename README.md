@@ -80,3 +80,12 @@ Também preciso aprender a usar o tmux de forma a útilizar todo seu potencial
 ```bash
  pip3 install pynvim
 ```
+
+# Pacotes NPM para instalar
+- vscode-css-language-server
+- cssmodules-language-server
+- typescript-language-server
+- some-sass-language-server
+- vscode-langservers-extracted
+- @angular/language-server
+- typescript
