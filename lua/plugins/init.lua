@@ -131,5 +131,8 @@ return {
     },
     {
         'mhartington/formatter.nvim'
+    },
+    {
+        'ionide/Ionide-vim'
     }
 }
