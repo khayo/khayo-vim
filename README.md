@@ -1,7 +1,6 @@
 # khayo-vim
 Repositório para armazenar minhas configurações do neovim
 
-
 # Comandos úteis:
 
 ## Instalação Lua
@@ -13,6 +12,18 @@ asdf global lua 5.1
 ### Em caso de erro na instalação
 ```bash
 sudo apt-get install libreadline-dev
+```
+### Lua windows
+```bash
+https://github.com/rjpcomputing/luaforwindows/releases
+```
+### Lua Rocks
+```bash
+https://github.com/luarocks/luarocks/wiki/Download
+```
+#### Instruções Lua Rocks
+```bash
+https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows
 ```
 
 ## Instalação node
@@ -82,10 +93,10 @@ Também preciso aprender a usar o tmux de forma a útilizar todo seu potencial
 ```
 
 # Pacotes NPM para instalar
-- vscode-css-language-server
-- cssmodules-language-server
-- typescript-language-server
-- some-sass-language-server
-- vscode-langservers-extracted
-- @angular/language-server
-- typescript
+npm i -g vscode-css-language-server cssmodules-language-server typescript-language-server some-sass-language-server vscode-langservers-extracted @angular/language-server typescript tree-sitter-cli neovim
+
+# updater
+adicione ao .bashrc ou .zshrc o alias a seguir
+```bash
+alias nup=/c/users/khayo/appdata/local/nvim/./update.sh
+```
