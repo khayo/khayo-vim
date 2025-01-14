@@ -13,7 +13,8 @@ asdf global lua 5.1
 ```bash
 sudo apt-get install libreadline-dev
 ```
-### Lua windows
+
+## Lua windows
 ```bash
 https://github.com/rjpcomputing/luaforwindows/releases
 ```
@@ -21,6 +22,7 @@ https://github.com/rjpcomputing/luaforwindows/releases
 ```bash
 https://github.com/luarocks/luarocks/wiki/Download
 ```
+
 #### Instruções Lua Rocks
 ```bash
 https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows
@@ -31,12 +33,6 @@ https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows
 asdf plugin add nodejs
 asdf install nodejs 20.14.0
 asdf global nodejs 20.14.0
-```
-
-## Pacotes node
-```bash
-npm i -g tree-sitter-cli
-npm i -g neovim
 ```
 
 ## Pacotes APT
@@ -65,12 +61,6 @@ apt install lazygit
 sudo pacman -S lazygit
 ```
 
-## Angular lsp
-```bash
-npm install -g typescript-language-server typescript                           
-npm install -g @angular/language-server                                        
-```
-
 ## NGINX lsp
 ```bash
 pip install -U nginx-language-server
@@ -93,10 +83,15 @@ Também preciso aprender a usar o tmux de forma a útilizar todo seu potencial
 ```
 
 # Pacotes NPM para instalar
-npm i -g vscode-css-language-server cssmodules-language-server typescript-language-server some-sass-language-server vscode-langservers-extracted @angular/language-server typescript tree-sitter-cli neovim
+npm i -g vscode-css-languageservice cssmodules-language-server typescript-language-server some-sass-language-server vscode-langservers-extracted @angular/language-server typescript tree-sitter-cli neovim
 
 # updater
 adicione ao .bashrc ou .zshrc o alias a seguir
 ```bash
-alias nup=/c/users/khayo/appdata/local/nvim/./update.sh
+alias nup=/c/users/CHANGE_FOR_THE_CORRECT_USER/appdata/local/nvim/./update.sh
+```
+# config
+adicione esse alias para facilitar a configuração do repositório
+```bash
+alias cnv='cd /c/users/CHANGE_FOR_THE_CORRECT_USER/appdata/local/nvim/'
 ```
