@@ -35,10 +35,15 @@ asdf install nodejs 20.14.0
 asdf global nodejs 20.14.0
 ```
 
-## Pacotes APT
+## Dependências Ubuntu
 ```bash
 sudo apt install fd-find
 sudo apt install ripgrep
+```
+## dependências Windows
+```bash
+choco install fd
+choco install ripgrep
 ```
 
 # Lazygit
