@@ -1,6 +1,11 @@
 # khayo-vim
 Repositório para armazenar minhas configurações do neovim
 
+# Linux
+clonar na pasta `.config/nvim`
+
+# Windows
+Clonar na pasta `/c/users/SEU_USER/AppData/local/nvim`
 # Comandos úteis:
 
 ## Instalação Lua
@@ -103,3 +108,6 @@ adicione esse alias para facilitar a configuração do repositório
 ```bash
 alias cnv='cd /c/users/CHANGE_FOR_THE_CORRECT_USER/appdata/local/nvim/'
 ```
+
+# Health check
+Use o comando  `:checkhealth`
