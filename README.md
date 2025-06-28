@@ -33,7 +33,7 @@ asdf global python 3.13.0
 ```bash
 asadf plugin add rust
 asdf install rust 1.84.0
-asdf global python 1.84.0
+asdf global rust 1.84.0
 ```
 
 ## Lazygit
@@ -50,8 +50,9 @@ sudo install lazygit -D -t /usr/local/bin/
 pip install -U nginx-language-server pynvim
 ```
 ## NPM
+```bash
 npm i -g vscode-css-languageservice cssmodules-language-server typescript-language-server some-sass-language-server vscode-langservers-extracted @angular/language-server typescript tree-sitter-cli neovim
-
+```
 
 # Aliases
 Adicione ao .bashrc ou .zshrc o alias a seguir para facilitar a configuração e atualização
@@ -105,15 +106,12 @@ winget install -e --id=JesseDuffield.lazygit
 sudo pacman -S lazygit
 ```
 
-
 # Dotnet
 ## Instalação debugger
 
 # Falta resolver
 Ainda não consegui resolver as questões do clipboard que não funciona corretamente
 em máquinas remotas e WSL
-
-Também preciso aprender a usar o tmux de forma a útilizar todo seu potencial
 
 # updater
 Adicione ao .bashrc ou .zshrc o alias a seguir
