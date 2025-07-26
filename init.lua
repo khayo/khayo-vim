@@ -1,2 +1,2 @@
-require("khayo")
+require("core")
 require("config.lazy")

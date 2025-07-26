@@ -1,3 +1,4 @@
+-- Esta funcionando (07/26/2025)
 local opts = { noremap = true, silent = true }
 local ng = require("ng");
 vim.keymap.set("n", "<leader>at", ng.goto_template_for_component, opts)
