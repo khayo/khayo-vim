@@ -57,3 +57,7 @@ vim.keymap.set("n", "<leader>ba", "<cmd>%bd|e#|bd#<CR>")
 vim.keymap.set('n', '<leader>e' ,"<cmd>NvimTreeToggle<CR>")
 vim.keymap.set('n', '<leader>vs' ,"<cmd>vs<CR>")
 vim.keymap.set('n', '<leader>vh' ,"<cmd>split<CR>")
+
+-- abre os gerenciadores
+vim.keymap.set('n', '<leader>M', "<cmd>Mason<CR>")
+vim.keymap.set('n', '<leader>L', "<cmd>Lazy<CR>")
