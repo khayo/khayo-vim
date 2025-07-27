@@ -1,7 +1,9 @@
+vim.lsp.enable({""})
+
 -- a parte dos icones esta funcionando
 vim.diagnostic.config({
-  virtual_line = true,
-  virtual_text = true,
+  -- virtual_text = true,
+  virtual_lines = true,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
