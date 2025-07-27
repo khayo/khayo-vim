@@ -1,7 +1,6 @@
--- vim.lsp.enable({})
---
--- tenho minhas duvidas se esse treco ta sendo chamado
+-- a parte dos icones esta funcionando
 vim.diagnostic.config({
+  virtual_line = true,
   virtual_text = true,
   underline = true,
   update_in_insert = false,
@@ -10,7 +9,7 @@ vim.diagnostic.config({
     border = "rounded",
     source = true,
   },
-  sigs = { 
+  signs = { 
     text = {
       [vim.diagnostic.severity.ERROR] = "󰅚 ",
       [vim.diagnostic.severity.WARN] = "󰀪 ",
@@ -20,6 +19,6 @@ vim.diagnostic.config({
     numhl = {
       [vim.diagnostic.severity.ERROR] = "ErrorMsg",
       [vim.diagnostic.severity.WARN] = "WarningMsg",
-    }
-  }
+    },
+  },
 })
