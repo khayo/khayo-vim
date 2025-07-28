@@ -9,7 +9,10 @@ return {
         config = function()
             require("blink.cmp").setup({
                 snippets = { preset = "luasnip" },
-                signature = { enabled = true },
+                signature = { 
+                    enabled = true,
+                    windown = { border = 'single' }
+                },
                 appearance = {
                     use_nvim_cmp_as_default = false,
                     nerd_font_variant = "normal",
@@ -23,6 +26,8 @@ return {
                     },
                 },
                 keymap = {
+                    preset = 'enter',
+                    ['<Tab>'] = { 'accept' },
                     ["<C-f>"] = {},
                 },
                 cmdline = {
@@ -34,7 +39,7 @@ return {
                 },
                 completion = {
                     menu = {
-                        border = nil,
+                        border = 'single',
                         scrolloff = 1,
                         scrollbar = false,
                         draw = {
@@ -48,7 +53,7 @@ return {
                     },
                     documentation = {
                         window = {
-                            border = nil,
+                            border = 'single',
                             scrollbar = false,
                             winhighlight = 'Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,EndOfBuffer:BlinkCmpDoc',
                         },
