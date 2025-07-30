@@ -1,4 +1,4 @@
-vim.lsp.enable({""})
+-- vim.lsp.enable({""})
 
 -- a parte dos icones esta funcionando
 vim.diagnostic.config({
