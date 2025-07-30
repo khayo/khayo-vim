@@ -26,7 +26,6 @@ return {
                     },
                 },
                 keymap = {
-                    preset = 'enter',
                     ['<Tab>'] = { 'accept' },
                     ["<C-f>"] = {},
                 },
