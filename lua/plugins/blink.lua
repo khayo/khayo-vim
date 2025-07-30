@@ -11,7 +11,7 @@ return {
                 snippets = { preset = "luasnip" },
                 signature = { 
                     enabled = true,
-                    windown = { border = 'single' }
+                    window = { border = 'single' }
                 },
                 appearance = {
                     use_nvim_cmp_as_default = false,
