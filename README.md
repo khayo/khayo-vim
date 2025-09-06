@@ -124,5 +124,11 @@ Adicione esse alias para facilitar a configuração do repositório
 alias cnv='cd /c/users/CHANGE_FOR_THE_CORRECT_USER/appdata/local/nvim/'
 ```
 
+# Adicionar usando Mason
+Expansor de HTML
+https://github.com/olrtg/emmet-language-server
+```nvim
+:MasonInstall emmet-language-server
+```
 # Health check
 Use o comando  `:checkhealth`
