@@ -1,5 +1,26 @@
+local pid = tostring(vim.fn.getpid())
 require 'lspconfig'.omnisharp.setup {
-    cmd = { "dotnet", "/home/khayo/.local/share/nvim/mason/packages/omnisharp/libexec/OmniSharp.dll" },
+
+    -- funcionando mas vou tentar de outra forma mais limpa
+    -- on_attach = function(client, bufnr)
+    --   -- Filtro de diagnostics indesejados
+    --   vim.lsp.handlers["textDocument/publishDiagnostics"] = function(_, result, ctx, config)
+    --   if not result.diagnostics then return end
+    --   -- Filtrar os diagnostics IDE0160 e IDE0008
+    --   result.diagnostics = vim.tbl_filter(function(diagnostic)
+    --       return diagnostic.code ~= "IDE0160" and diagnostic.code ~= "IDE0008" 
+    --   end, result.diagnostics)
+    --
+    --   vim.lsp.diagnostic.on_publish_diagnostics(_, result, ctx, config)
+    --   end
+    -- end,
+    cmd = { 
+        "dotnet", 
+        "/home/khayo/.local/share/nvim/mason/packages/omnisharp/libexec/OmniSharp.dll", 
+        "--languageserver",
+        "--hostPID", pid,
+        "--editorconfig", "/home/khayo/.config/nvim/dotnet/.editorconfig" 
+    },
 
     settings = {
         FormattingOptions = {

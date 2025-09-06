@@ -1,0 +1,14 @@
+root = true
+
+[*.cs]
+
+# Preferência por 'var'
+dotnet_diagnostic.IDE0008.severity = suggestion
+csharp_style_var_elsewhere = true:suggestion
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+
+# Preferência por namespace com bloco {}
+dotnet_diagnostic.IDE0161.severity = suggestion
+csharp_style_namespace_declarations = block_scoped:suggestion
+
