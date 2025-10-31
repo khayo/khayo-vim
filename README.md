@@ -31,7 +31,7 @@ asdf global python 3.13.0
 
 ## Instalação Rust
 ```bash
-asadf plugin add rust
+asdf plugin add rust
 asdf install rust 1.84.0
 asdf global rust 1.84.0
 ```
