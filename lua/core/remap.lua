@@ -77,5 +77,14 @@ vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
 vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 
+-- error navigation
+vim.keymap.set("n", "<leader>mm", vim.diagnostic.goto_next, {
+  desc = "Next diagnostic"
+})
+
+vim.keymap.set("n", "<leader>yy", vim.diagnostic.goto_prev, {
+  desc = "Previous diagnostic"
+})
+
 -- dadbod
 vim.keymap.set('n', '<leader>db', '<CMD>DBUI<CR>')
