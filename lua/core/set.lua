@@ -28,4 +28,24 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80,120"
 
-vim.opt.clipboard = "unnamedplus"
+if vim.fn.has("macunix") == 1 then
+  vim.opt.clipboard = "unnamedplus"
+
+elseif vim.fn.has("win32") == 1 then
+  vim.opt.clipboard = "unnamedplus"
+
+else
+  vim.g.clipboard = {
+    name = "OSC 52",
+    copy = {
+      ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    },
+    paste = {
+      ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+      ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+    },
+  }
+
+  vim.opt.clipboard = "unnamedplus"
+end
