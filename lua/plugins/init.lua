@@ -27,17 +27,10 @@ return {
     {
         'theprimeagen/harpoon'
     },
-    -- cria uma arvore para undo
     {
         'mbbill/undotree'
     },
     { 'neovim/nvim-lspconfig' },
-    -- { 'hrsh7th/cmp-nvim-lsp' },
-    -- { 'hrsh7th/nvim-cmp' },
-    -- -- { 'hrsh7th/cmp-buffer' },    -- Completa com base no conteúdo do buffer atual
-    -- { 'hrsh7th/cmp-path' },      -- Autocomplete de caminhos
-    -- -- { 'hrsh7th/cmp-cmdline' },   -- Autocomplete para a linha de comando
-    -- { 'saadparwaiz1/cmp_luasnip' }, -- Integração do LuaSnip com nvim-cmp
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
     {
@@ -59,7 +52,6 @@ return {
     },
     {
         "kdheepak/lazygit.nvim",
-        -- optional for floating window border decoration
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
@@ -68,13 +60,11 @@ return {
         'akinsho/bufferline.nvim',
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
-    -- terminal integrado
     {
         'akinsho/toggleterm.nvim',
         version = "*",
     },
 
-    -- fecha automaticamente as tags
     {
         'windwp/nvim-autopairs',
         event = 'InsertEnter',
@@ -89,13 +79,13 @@ return {
           vim.g.vimspector_enable_mappings = 'HUMAN'
         end,
     },
-    { -- This plugin
+    {
         'Zeioth/compiler.nvim',
         cmd = { 'CompilerOpen', 'CompilerToggleResults', 'CompilerRedo'},
         dependencies = { 'stevearc/overseer.nvim', 'nvim-telescope/telescope.nvim' },
         opts = {},
     },
-    { -- The task runner we use
+    {
         'stevearc/overseer.nvim',
         commit = '6271cab7ccc4ca840faa93f54440ffae3a3918bd',
         cmd = { 'CompilerOpen', 'CompilerToggleResults', 'CompilerRedo' },
@@ -109,7 +99,6 @@ return {
         }
     },
     {
-        -- serve para trabalhar em conjunto com o tmux (precisa instalar o plugin no tmux também)
         'christoomey/vim-tmux-navigator'
     },
     {

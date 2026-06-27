@@ -1,5 +1,3 @@
--- vim.lsp.enable({""})
-
 local bordered_float = {
   border = "rounded",
   max_width = 80,
@@ -17,9 +15,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
   callback = set_float_highlights,
 })
 
--- a parte dos icones esta funcionando
 vim.diagnostic.config({
-  -- virtual_text = true,
   virtual_lines = true,
   underline = true,
   update_in_insert = false,

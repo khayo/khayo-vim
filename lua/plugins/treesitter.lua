@@ -7,11 +7,6 @@ return {
     dependencies = {
         "nvim-treesitter/nvim-treesitter-textobjects", lazy = false
     },
-    -- {
-    --     'nvim-treesitter/playground'
-    -- },
-    -- config = function()
-    --     require("nvim-treesitter.configs").setup({
     config = function()
       local ok, configs = pcall(require, "nvim-treesitter.configs")
       if not ok then return end
@@ -61,7 +56,6 @@ return {
                     lookahead = true,
 
                     keymaps = {
-                        -- You can use the capture groups defined in textobjects.scm
                         ["af"] = { query = "@function.outer", desc = "around a function" },
                         ["if"] = { query = "@function.inner", desc = "inner part of a function" },
                         ["ac"] = { query = "@class.outer", desc = "around a class" },
@@ -74,18 +68,18 @@ return {
                         ["ip"] = { query = "@parameter.inner", desc = "inside a parameter" },
                     },
                     selection_modes = {
-                        ["@parameter.outer"] = "v",   -- charwise
-                        ["@parameter.inner"] = "v",   -- charwise
-                        ["@function.outer"] = "v",    -- charwise
-                        ["@conditional.outer"] = "V", -- linewise
-                        ["@loop.outer"] = "V",        -- linewise
-                        ["@class.outer"] = "<c-v>",   -- blockwise
+                        ["@parameter.outer"] = "v",
+                        ["@parameter.inner"] = "v",
+                        ["@function.outer"] = "v",
+                        ["@conditional.outer"] = "V",
+                        ["@loop.outer"] = "V",
+                        ["@class.outer"] = "<c-v>",
                     },
                     include_surrounding_whitespace = false,
                 },
                 move = {
                     enable = true,
-                    set_jumps = true, -- whether to set jumps in the jumplist
+                    set_jumps = true,
                     goto_previous_start = {
                         ["[f"] = { query = "@function.outer", desc = "Previous function" },
                         ["[c"] = { query = "@class.outer", desc = "Previous class" },
