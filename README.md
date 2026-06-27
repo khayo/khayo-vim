@@ -190,6 +190,40 @@ O leader desta configuração é `Espaço`.
 | `<leader>D` | Normal | Desassemblar código |
 | `<leader><F3>` | Normal | Resetar Vimspector |
 
+# Setup rápido (macOS, Ubuntu/Debian e Arch)
+
+Numa máquina recém-formatada, clone o repo e rode o `bootstrap.sh`. Ele detecta o
+sistema operacional automaticamente e usa o gerenciador de pacotes certo (Homebrew,
+apt ou pacman). É idempotente — pode rodar de novo sem quebrar nada — e instala
+Neovim, fd, ripgrep, lazygit, tmux, runtimes (Node/Python/Rust via asdf, Lua 5.1 via
+luaver), a Nerd Font e todos os language servers.
+
+```bash
+git clone https://github.com/khayo/khayo-vim.git ~/.config/nvim
+cd ~/.config/nvim
+./bootstrap.sh
+```
+
+Opções:
+
+- `./bootstrap.sh --no-sync` — não roda o `:Lazy sync` headless no final.
+
+Depois do script: abra o Neovim, rode `:checkhealth` e `:MasonInstall emmet-language-server`.
+
+## Como o bootstrap é organizado
+
+- `bootstrap.sh` — detecta o SO e contém a lógica comum (runtimes, language servers,
+  clone da config, sync de plugins). As versões fixadas dos runtimes ficam no topo do arquivo.
+- `bootstrap/macos.sh`, `bootstrap/ubuntu.sh`, `bootstrap/arch.sh` — apenas os comandos
+  específicos de cada sistema (instalar pacotes base, Neovim, lazygit, Nerd Font).
+
+Para adicionar suporte a outra distro, crie um `bootstrap/<os>.sh` definindo as funções
+`os_prepare`, `os_install_base` e `os_install_nerdfont` (e, opcionalmente, `os_post_notes`).
+
+---
+
+As instruções manuais abaixo continuam servindo de referência caso prefira instalar passo a passo.
+
 # Ubuntu
 clonar na pasta `.config/nvim`
 
