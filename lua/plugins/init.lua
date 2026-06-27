@@ -72,19 +72,6 @@ return {
     {
         'akinsho/toggleterm.nvim',
         version = "*",
-        config = function()
-          require("toggleterm").setup({
-              size = 20,
-              open_mapping = [[<c-\>]],
-              direction = "float",
-              shade_terminals = true,
-              start_in_insert = true,
-              insert_mappings = true,
-              persist_size = true,
-              close_on_exit = true,
-              shell = vim.o.shell,
-         })
-      end,
     },
 
     -- fecha automaticamente as tags
