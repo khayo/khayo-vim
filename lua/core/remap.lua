@@ -34,6 +34,8 @@ end)
 
 vim.keymap.set("n", "]q", "<cmd>cnext<CR>zz", { desc = "Next quickfix" })
 vim.keymap.set("n", "[q", "<cmd>cprev<CR>zz", { desc = "Previous quickfix" })
+vim.keymap.set("n", "<leader>co", "<cmd>copen<CR>", { desc = "Open quickfix" })
+vim.keymap.set("n", "<leader>cc", "<cmd>cclose<CR>", { desc = "Close quickfix" })
 vim.keymap.set("n", "]l", "<cmd>lnext<CR>zz", { desc = "Next location list" })
 vim.keymap.set("n", "[l", "<cmd>lprev<CR>zz", { desc = "Previous location list" })
 
@@ -66,18 +68,30 @@ vim.keymap.set('n', '<leader>L', "<cmd>Lazy<CR>")
 vim.keymap.set({'n', 'x'}, '<F13>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 vim.keymap.set('n', '<F14>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 vim.keymap.set('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
-vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>', opts)
+vim.keymap.set('n', 'K', function()
+  vim.lsp.buf.hover({ border = "rounded", max_width = 80, max_height = 20 })
+end, { desc = "LSP hover" })
 vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', opts)
 vim.keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<cr>', opts)
 vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<cr>', opts)
 vim.keymap.set('n', 'go', '<cmd>lua vim.lsp.buf.type_definition()<cr>', opts)
 vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', opts)
-vim.keymap.set('n', 'gs', '<cmd>lua vim.lsp.buf.signature_help()<cr>', opts)
+vim.keymap.set('n', 'gs', function()
+  vim.lsp.buf.signature_help({ border = "rounded", max_width = 80, max_height = 20 })
+end, { desc = "LSP signature help" })
 vim.keymap.set('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
 vim.keymap.set({'n', 'x'}, '<F3>', '<cmd>lua vim.lsp.buf.format({async = true})<cr>', opts)
 vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
 
 -- error navigation
+vim.keymap.set("n", "]d", function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end, { desc = "Next diagnostic" })
+
+vim.keymap.set("n", "[d", function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end, { desc = "Previous diagnostic" })
+
 vim.keymap.set("n", "<leader>mm", vim.diagnostic.goto_next, {
   desc = "Next diagnostic"
 })
