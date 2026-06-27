@@ -43,7 +43,10 @@ return {
     {
         'L3MON4D3/LuaSnip',
         version = 'v2.*',
-        build = 'make install_jsregexp'
+        build = 'make install_jsregexp',
+        dependencies = {
+            'rafamadriz/friendly-snippets',
+        },
     },
     {
         'wakatime/vim-wakatime'
@@ -91,11 +94,6 @@ return {
         config = true
     },
     {
-        'L3MON4D3/LuaSnip',
-        version = 'v2.*',
-        build = 'make install_jsregexp'
-    },
-    {
         'Hoffs/omnisharp-extended-lsp.nvim'
     },
     {
@@ -129,9 +127,6 @@ return {
     },
     {
         'joeveiga/ng.nvim'
-    },
-    {
-        'rafamadriz/friendly-snippets'
     },
     {
         'f-person/git-blame.nvim'

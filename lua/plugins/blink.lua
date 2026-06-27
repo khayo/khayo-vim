@@ -1,8 +1,8 @@
 return {
-    { "L3MON4D3/LuaSnip", keys = {} },
     {
         "saghen/blink.cmp",
         dependencies = {
+            "L3MON4D3/LuaSnip",
             "rafamadriz/friendly-snippets",
         },
         version = "*",
