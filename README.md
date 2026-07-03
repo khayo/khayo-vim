@@ -5,6 +5,13 @@ Repositório para armazenar minhas configurações do neovim
 
 O leader desta configuração é `Espaço`.
 
+## Nativos nvim
+
+| Atalho | Modo | Ação |
+| --- | --- | --- |
+| <C-o> | Normal | Volta para onde estava antes do jump (go to declaratio gd) |
+| <C-i> | Normal | Depois de usar <C-o> navega para frente no histórico|
+
 ## Arquivos e sessão
 
 | Atalho | Modo | Ação |
